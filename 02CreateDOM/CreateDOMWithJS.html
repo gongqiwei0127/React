@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test"></div>
+    <script type="text/javascript" src="../ReactLib/react.development.js"></script>
+    <script type="text/javascript" src="../ReactLib/react-dom.development.js"></script>
+
+    <script type="text/javascript">
+
+        // const VDOM = React.createElemet(标签名,标签属性,标签内容)
+        const VDOM =React.createElement('h1',{id:'title'}, React.createElement('span',{},'Hello React'))
+        ReactDOM.render(VDOM,document.getElementById('test'))
+    </script>
+ <!--  注释的快捷键：
+    单行注释：alt+/ ， 
+    多行注释：alt+shift+A
+-->
+   
+<!-- react.development.js 必须要再react-dom.development.js 之前引用 -->
+</body>
+</html>
